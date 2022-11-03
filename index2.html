@@ -1,0 +1,359 @@
+
+<!doctype html>
+<html>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body{
+  user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; 
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #262626;
+}
+ul{
+  display: flex;
+}
+ul li{
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #171515;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: .5s;
+}
+ul li:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  /* background: #d35400; */
+  border-radius: 50%;
+  transform: scale(.9);
+  z-index: -1;
+  transition: .5s;
+}
+ul li:nth-child(1):before{
+  background: #4267B2;
+}
+ul li:nth-child(2):before{
+  background: #1DA1F2;
+}
+ul li:nth-child(3):before{
+  background: #E1306C;
+}
+ul li:nth-child(4):before{
+  background: #2867B2;
+}
+ul li:nth-child(5):before{
+  background: #ff0000;
+}
+ul li:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+  /* box-shadow: 0 0 15px #d35400; */
+}
+ul li:nth-child(1):hover:before{
+  box-shadow: 0 0 15px #4267B2;
+}
+ul li:nth-child(2):hover:before{
+  box-shadow: 0 0 15px #1DA1F2;
+}
+ul li:nth-child(3):hover:before{
+  box-shadow: 0 0 15px #E1306C;
+}
+ul li:nth-child(4):hover:before{
+  box-shadow: 0 0 15px #2867B2;
+}
+ul li:nth-child(5):hover:before{
+  box-shadow: 0 0 15px #ff0000;
+}
+ul li:nth-child(1):hover{
+  color: #456cba;
+  box-shadow: 0 0 15px #4267B2;
+  text-shadow: 0 0 15px #4267B2;
+}
+ul li:nth-child(2):hover{
+  color: #26a4f2;
+  box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2;
+}
+ul li:nth-child(3):hover{
+  color: #e23670;
+  box-shadow: 0 0 15px #E1306C;
+  text-shadow: 0 0 15px #E1306C;
+}
+ul li:nth-child(4):hover{
+  color: #2a6cbb;
+  box-shadow: 0 0 15px #2867B2;
+  text-shadow: 0 0 15px #2867B2;
+}
+ul li:nth-child(5):hover{
+  color: #ff1a1a;
+  box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+}
+ul li:hover{
+  color: #ffa502;
+  box-shadow: 0 0 15px #d35400;
+  text-shadow: 0 0 15px #d35400;
+} 
+ html,body
+{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #fff;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.btn
+{
+    width: 100px;
+    height: 100px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+i.fa
+{
+    font-size: 54px;
+}
+#fb
+{
+    color: #006fff;
+    text-shadow: 0 0 30px #006fff;
+}
+#ig
+{
+    color: #ff5f40;
+    text-shadow: 0 0 30px #ff5f40;
+}
+#tw
+{
+    color: #00acff;
+    text-shadow: 0 0 30px #00acff;
+}
+.btn.fb-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+}
+.btn.fb-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+.btn.ig-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(255,16,39,0.5);
+}
+.btn.ig-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(255,16,39,0.57);
+}
+.btn.tw-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(0,255,255,0.53);
+}
+.btn.tw-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(0,111,255,0.6);
+}
+
+
+
+
+
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<head><meta name="google-site-verification" content="xegxHTnzLVTBun3o54Bie8D01rrTpVQi6CXQ30Mr82g" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover">
+
+  <div id="sailoading"></div>
+  <style>
+  body{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPd786d7CbFDlORZzcAksrXLZKbhLioR1yuQ&usqp=CAU");
+  }
+    #sailoading {
+      background-color: #000 url(Assets/preloader.gif) no-repeat center;
+      height: 100;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+      background-size: 15%;
+
+    }
+  </style>
+
+
+ 
+
+    <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+      <div id="profile"
+        class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+
+
+        <div class="p-4 md:p-12 text-center lg:text-left">
+          <!-- Image for mobile view-->
+          <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA5C6Yk9FI8xnV641awJHs9fLDY_VS860XZg&usqp=CAU')"></div>
+
+          <h1 class="text-3xl font-bold pt-8 lg:pt-0">Bharath Jagan</h1>
+                    <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+          <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
+              <!--<ul>--->
+            
+          
+            <li>17 years old car ethusiastic from chennai, <br></li>
+         <!-- <br> --><li> <!--hh--></li><br><!--<br>--> <li>Umm need to know more? contact my insta</p></li>
+
+          <p class="pt-8 text-sm font-medium">"The concept of hope is nothing more than giving up. A word that holds no true meaning"</p>
+</ul>
+        
+
+          <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+            <ul>
+         <li><i class="fab fa-facebook-f"></i></li>
+         
+      <a href="https://instagram.com/bharath_jagan__?igshid=YmMyMTA2M2Y=">   <li><i class="fab fa-instagram"></i></li></a>
+         
+  <a href="https://youtube.com/channel/UCzUxDuxDHpPLoaU0Ui4hHJQ">    <li><i class="fab fa-youtube"></i></li></a>
+      </ul>
+        </div>
+
+      </div>
+
+      <!--Img Col-->
+      <div class="w-full lg:w-2/5">
+        <!-- Big profile image for side bar (desktop) -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA5C6Yk9FI8xnV641awJHs9fLDY_VS860XZg&usqp=CAU" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+        <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
+
+      </div>
+
+
+      <!-- Pin to top right corner -->
+     <div class="absolute top-0 right-0 h-12 w-18 p-4">
+          <button class="js-change-theme focus:outline-none">🌙</button>
+        </div> 
+
+    </div>
+    <!-- FORM -->
+  
+  </div>
+
+  <style>
+    .invalid-feedback,
+    .empty-feedback {
+      display: none;
+    }
+
+    .was-validated :placeholder-shown:invalid~.empty-feedback {
+      display: block;
+    }
+
+    .was-validated :not(:placeholder-shown):invalid~.invalid-feedback {
+      display: block;
+    }
+
+    .is-invalid,
+    .was-validated :invalid {
+      border-color: #dc3545;
+    }
+
+    .is-invalid,
+    .was-validated :invalid:focus {
+      --tw-ring-color: rgba(220, 53, 69, 0.2);
+    }
+  </style>
+
+  <!-- Web3Forms Popup Widget End here -->
+
+
+
+  <script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script>
+    //Init tooltips
+    tippy('.link', {
+      placement: 'bottom'
+    })
+
+  /*  Toggle mode
+      const toggle = document.querySelector('.js-change-theme');
+      const body = document.querySelector('body');
+      const profile = document.getElementById('profile');
+
+
+    toggle.addEventListener('click', () => {
+
+      if (body.classList.contains('text-gray-900')) {
+          toggle.innerHTML = "☀️";
+         body.classList.remove('text-gray-900');
+          body.classList.add('text-gray-100');
+          profile.classList.remove('bg-white');
+          profile.classList.add('bg-gray-900');
+        } else
+       {
+        toggle.innerHTML = "🌙";
+         body.classList.remove('text-gray-100');
+        body.classList.add('text-gray-900');
+    profile.classList.remove('bg-gray-900');			
+        profile.classList.add('bg-white');
+
+      }
+    });
+    var loader = document.getElementById('dhvitloading');
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })*/
+
+  </script>
+
+</body>
+
+</html>
